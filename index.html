@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GIPHY PARTY</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <style>
+        body {
+            background-color: #242628;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        #search-btn {
+            padding: 10px;
+            border-radius: 6px;
+            background-color: orange;
+        }
+
+        #remove-btn {
+            padding: 10px;
+            border-radius: 6px;
+            background-color: tomato;
+        }
+    </style>
+    <body>
+        <h1>GIPHY PARTY</h1>
+        <div class="container">
+
+            <input id="inputValue" type="text" pattern="[a-zA-Z]" onkeyup="getInputValue(this)"/>
+            <button id="search-btn">Search Giphy!</button>
+            <button id="remove-btn">Remove Images</button>
+
+            <div class="img-container" style="height: 900px; overflow: hidden; margin-top: 40px;"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
